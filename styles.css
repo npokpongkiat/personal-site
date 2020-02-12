@@ -1,0 +1,83 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  color: #F9F9F9;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #F9F9F9;
+}
+
+h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 175%;
+  color: #E6E6FF;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #F9F9F9;
+}
+
+h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: #D6D6D6;
+}
+p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 175%;
+  color: #E6E6FF;
+}
+
+.navbar {
+  margin-left:15%;
+  margin-right:15%;
+  margin-top:2%;
+}
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #F9F9F9;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #BFBFD8;
+}
+
+.works-click {
+  transition: 0.5s;
+}
+
+.works-click:hover {
+  transform: scale(1.02);
+}
