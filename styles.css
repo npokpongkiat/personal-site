@@ -56,12 +56,11 @@ p {
 }
 
 .navbar {
-  margin-left:15%;
-  margin-right:15%;
-  margin-top:2%;
+  margin-top:50px;
+  padding: 0;
 }
 
-.nav-link {
+.navbar-dark {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -70,7 +69,11 @@ p {
   transition: 0.3s;
 }
 
-.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link {
+  color: #F9F9F9;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #BFBFD8;
 }
 
@@ -81,3 +84,24 @@ p {
 .works-click:hover {
   transform: scale(1.02);
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-header {
+  max-width: 1230px;
+}
+
+/* small */
+@media (min-width: 576px) { ... }
+
+/* medium */
+@media (min-width: 768px) { ... }
+
+/* large*/
+@media (min-width: 992px) { ... }
+
+/* xl */
+@media (max-width: 1200px) { ... }
