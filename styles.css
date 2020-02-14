@@ -47,6 +47,14 @@ h5 {
   color: #D6D6D6;
 }
 
+h6 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 200%;
+  color: #E6E6FF;
+}
 p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
