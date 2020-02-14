@@ -26,7 +26,7 @@ h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 21px;
-  line-height: 175%;
+  line-height: 200%;
   color: #E6E6FF;
 }
 
@@ -46,13 +46,32 @@ h5 {
   line-height: 175%;
   color: #D6D6D6;
 }
+
 p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 175%;
+  line-height: 200%;
   color: #E6E6FF;
+}
+
+label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  color: #F9F9F9;
+
+}
+
+.anim-header {
+  animation: fadeIn 2s, translate 0.75s;
+}
+
+.anim-body {
+  animation: fadeIn 2s, translate-body 1s;
 }
 
 .navbar {
@@ -63,7 +82,7 @@ p {
 .navbar-dark {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   color: #F9F9F9;
   transition: 0.3s;
@@ -78,6 +97,11 @@ p {
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #BFBFD8;
+  transform: scale(1.05);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  transition: 0.3s;
 }
 
 .works-click {
@@ -95,6 +119,82 @@ p {
 
 .container-header {
   max-width: 1230px;
+}
+
+.form-width {
+  max-width: 720px;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #BCBCC6;
+}
+
+.form-control-lg {
+  height: calc(2em + 1rem + 2px);
+  padding: 1rem 1rem;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9F9F9;
+  padding: .75rem 1.75rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  background-color: #1C1C28;
+  border-color: #E6E6FF;
+  color: #E6E6FF;
+}
+
+.btn-primary {
+  background-color: #1C1C28;
+  border-color: #F9F9F9;
+}
+
+.form-control {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.navbar-brand {
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+@-webkit-keyframes "fadeIn" {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes "translate" {
+  0% {transform: translateY(-30px)}
+  100% {transform: translateY(0)}
+}
+
+@-webkit-keyframes "translate-body" {
+  0% {transform: translateY(30px)}
+  100% {transform: translateY(0)}
 }
 
 /* small */
