@@ -52,7 +52,7 @@ h6 {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 200%;
+  line-height: 215%;
   color: #E6E6FF;
 }
 p {
@@ -71,7 +71,11 @@ label {
   font-size: 18px;
   line-height: 100%;
   color: #F9F9F9;
+}
 
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .anim-header {
@@ -88,7 +92,7 @@ label {
 }
 
 .navbar-dark {
-  font-family: 'Inter', sans-serif;
+  font-family:  'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -101,7 +105,7 @@ label {
 }
 
 .nav-link {
-  text-align: right;
+  text-align: center;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #BFBFD8;
@@ -186,6 +190,18 @@ label {
   transform: scale(1.05);
 }
 
+.hide-image {
+  display:block !important;
+}
+
+.navbar-collapse {
+  padding-top: 2rem;
+}
+
+.resp-title {
+  text-align:center;
+}
+
 @-webkit-keyframes "fadeIn" {
 	from {
 		opacity: 0;
@@ -206,13 +222,39 @@ label {
 }
 
 /* small */
-@media (min-width: 576px) { ... }
+@media (max-width: 576px) {
+h1 {
+  font-size: 35px;
+  line-height: 130%;
+  }
+
+h3 {
+  font-size: 18px;
+  }
+
+.col {
+  max-width: 100%;
+  }
+
+.resp-title {
+  text-align: left;
+  }
+}
 
 /* medium */
 @media (min-width: 768px) { ... }
 
 /* large*/
-@media (min-width: 992px) { ... }
+@media (max-width: 992px) {
+.hide-image {
+  display:none !important;
+  }
+
+.title-res{
+
+  }
+}
+
 
 /* xl */
 @media (max-width: 1200px) { ... }
